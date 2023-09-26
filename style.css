@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.deco {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@keyframes wobbleAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#sun {
+    height: 300px;
+    animation: wobbleAnimation 5s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+@keyframes cloudAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes wobbleAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#cloud1,
+#cloud2,
+#cloud3 {
+    height: 150px;
+    animation: cloudAnimation 20s linear infinite;
+}
+
+#cloud1 {
+    margin-bottom: 69px;
+}
+
+#cloud2 {
+    margin-bottom: 111px;
+    margin-left: 69px;
+}
+
+#cloud3 {
+    margin-bottom: 42px;
+    margin-left: 69px;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+}
+
+.date {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#grass {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+.grass {
+    height: 250px;
+    width: 33.33%;
+    margin: 0;
+}
